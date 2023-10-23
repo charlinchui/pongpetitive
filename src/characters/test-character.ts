@@ -1,7 +1,9 @@
 import { Character, Paddle } from "../character";
 
 export const testCharacter : Character = new Character(
-    new Paddle(10, 100),
+    new Paddle(15, 150, 50),
     "Test Character",
-    3
+    6,
+    2,
+    15
 )

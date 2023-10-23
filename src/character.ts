@@ -5,10 +5,14 @@ export class Character {
     //public portrait: Sprite;
     public name: String
     public speed: number
-    constructor(paddle: Paddle, name: String, speed: number){
+    public strength: number
+    public powerArea: number;
+    constructor(paddle: Paddle, name: String, speed: number, strength: number, powerArea: number){
         this.name = name;
         this.paddle = paddle;
         this.speed = speed;
+        this.strength = strength;
+        this.powerArea = powerArea;
         //this.portrait = portrait;
     }
 }
@@ -16,10 +20,12 @@ export class Character {
 export class Paddle { 
     public width: number;
     public height: number;
+    public angle: number;
     //public sprite: Sprite;
-    constructor(witdh: number, height: number){
+    constructor(witdh: number, height: number, angle: number){
         this.width = witdh;
         this.height = height;
+        this.angle = angle;
         //this.sprite = sprite;
     }
 }
